@@ -1,316 +1,344 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+    <!-- Put your site title here -->
+    <title>Hammam Ben Younes | A Web Developer based in Tunis, Tunisia.</title>
 
-  <!-- Put your site title here -->
-  <title>
-    Hammam Ben Younes | A Web Developer based in Tunis, Tunisia.
-  </title>
+    <meta name="description" content="Add small description of yourslef." />
+    <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+    <meta
+      name="keywords"
+      content="Put your name, skills and some coding keywords"
+    />
+    <link rel="stylesheet" href="index.css" />
 
-  <meta name="description" content="Add small description of yourslef.">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="Put your name, skills and some coding keywords" />
-  <link rel="stylesheet" href="index.css" />
-</head>
+    <link rel="stylesheet" href="fonts/font-mfizz/font-mfizz.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>
-  
-  
-  
+  <body>
+    <!-- ***** Header ***** -->
 
-  <!-- ***** Header ***** -->
+    <header class="header" role="banner" id="top">
+      <div class="row">
+        <nav class="nav" role="navigation">
+          <ul class="nav__items">
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#experience" class="nav__link">Experience</a>
+            </li>
 
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item"><a href="#resume" class="nav__link">Resume</a></li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Work</a>
+            </li>
 
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header__main">
-      <div class="header__img">
-        <img src="" alt="">
-      </div>
-      <div class="header__text-box">
-        <div class="header__text">
-          <p>A Web Developer based in Tunis, Tunisia.</p>
-
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__main">
           <h1 class="heading-primary">
-            
             <!-- Replace the following name with your name -->
-            <span>Hammam Ben Younes</span>
+            <span>Hi ! I'm Hammam</span>
           </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-            eius.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-            eius.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-            eius.
-          </p>
-          <!-- Put a small paragraph about yourself -->
-          <a href="#contact" class="btn btn--pink">Get in touch</a>
+          <p>A Web Developer based in Tunis, Tunisia.</p>
+          <a href="#about" class="btn"><i class="fas fa-arrow-down"></i></a>
         </div>
       </div>
-    </div>
-    
-  </header>
+    </header>
 
-  <main role="main">
+    <main role="main">
+      <!-- ***** About ***** -->
 
-    <!-- ***** Work ***** -->
-    
+      <section class="about" id="about">
+        <div class="row">
+          <h2>About Me</h2>
+          <div class="about__main">
+            <div class="about__img"></div>
+            <div class="about__text-box">
+              <div class="about__text">
+                <p>
+                  I am an established Web Developer and currently studying
+                  Computer Science.
+                </p>
+                <!-- Put a small paragraph about yourself -->
+                <a href="#contact" class="btn btn--pink">Get in touch</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <section class="work" id="work">
-      <div class="row">    
-        <h2>My Work</h2>
-        <div class="bottom">        
-          <nav class="menu">
-            <input
-              type="button"
-              value="All"
-              class="all btn_all btn active_input"
-              onclick="var id=this.classList[0];
-              var btnClasse= this.classList[1];
-              handleActive(id,btnClasse);"
-            />
-            <input
-              type="button"
-              value="Websites"
-              class="websites btn_websites btn"
-              onclick="var id=this.classList[0];
-              var btnClasse= this.classList[1];
-              handleActive(id,btnClasse);
-              "
-            />
-            <input
-              type="button"
-              value="Applications"
-              class="applications btn_applications btn"
-              onclick="var id=this.classList[0];
-              var btnClasse= this.classList[1];
-              handleActive(id,btnClasse);"
-            />
-          </nav>
+      <!-- ***** Experience ***** -->
+
+      <section class="experience" id="experience">
+        <div class="row">
+          <h2>Experience</h2>
+          <div class="experience__main">
+            <p>
+              Through many hardships and by investing a lot of time, I have been
+              able to gain high skills in HTML, CSS, JavaScript, Reactjs,
+              Testing and debugging, Backend basics, SEO and Designing.
+            </p>
+            <div class="technologies">
+              <h4>Technologies I'm mostly working with:</h4>
+              <i class="fab fa-html5 fa-3x"></i>
+              <i class="fab fa-css3-alt fa-3x"></i>
+              <i class="fab fa-js fa-3x"></i>
+              <i class="fab fa-react fa-3x"></i>
+              <i class="fab fa-node fa-3x"></i>
+              <i class="fab fa-php fa-3x"></i>
+              <i class="fab fa-python fa-3x"></i>
+              <i class="fab fa-java fa-3x"></i>
+              <i class="icon-mongodb fa-3x"></i>
+              <i class="icon-postgres fa-3x"></i>
+              <i class="icon-wordpress fa-3x"></i>
+              <span
+                class="iconify fa-3x"
+                data-icon="simple-icons:firebase"
+              ></span>
+            </div>
+            <div class="resume">
+              <p>Check out my resume :</p>
+              <a href="res/CV (English).pdf" class="btn" target="_blank"
+                >View Resume</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ***** Work ***** -->
+
+      <section class="work" id="work">
+        <div class="row">
+          <h2>My Work</h2>
+          <div class="work-content">
+            <nav class="menu">
+              <input
+                type="button"
+                value="All"
+                id="allBtn"
+                class="menuBtn active_input"
+                onclick="document.querySelectorAll('.project').forEach(function(el) {
+                  el.style.display = 'block';
+               });
+               
+             
+              handleActive(this.id);"
+              />
+              <input
+                type="button"
+                value="Websites"
+                id="webBtn"
+                class="menuBtn"
+                onclick="document.querySelectorAll('.project').forEach(function(el) {
+                  el.style.display = 'block';
+               });
+                document.querySelectorAll('.app').forEach(function(el) {
+                  el.style.display = 'none';
+               });
+              
+         
+              handleActive(this.id);"
+              />
+              <input
+                type="button"
+                value="Applications"
+                id="appBtn"
+                class="menuBtn"
+                onclick="document.querySelectorAll('.project').forEach(function(el) {
+                  el.style.display = 'block';
+               });
+                document.querySelectorAll('.website').forEach(function(el) {
+                  el.style.display = 'none';
+               });
+              
+              
+              handleActive(this.id);"
+              />
+            </nav>
             <div id="all" class="inside active">
               <div class="inside_content">
-                <div class="projet"></div>
-                <div class="projet"></div>
-                <div class="projet"></div>
-                <div class="projet"></div>
-                <div class="projet"></div>
-                <div class="projet"></div>
-              </div>          
-            </div>
-            <div id="websites" class="inside">
-                     2
-            </div>  
-            <div id="applications" class="inside ">
-              3
-            </div>
-            </div>
-        </div>
-      </div>
-        <div class="work__boxes">
-
-          <!-- Each div with the work__box class is a project. -->
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Portfolio Template</h3>
-              <p>
-                A free Open Source Portfolio for anyone to use for free.
-              </p>
-              <ul class="work__list">
-                <li>HTML</li>
-                <li>SCSS</li>
-                <li>JavaScript</li>
-                <li>Parcel</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://nisar.surge.sh" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/nisarhassan12/portfolio" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
+                <div class="project website fadeIn">
+                  <img src="res/images/project-1.png" alt="" />
+                  <div class="overlay">
+                    <p>Project name</p>
+                    <button type="button" class="btn modalBtn" id="Btn1">
+                      View project
+                    </button>
+                  </div>
+                </div>
+                <div class="project app fadeIn">
+                  <img src="res/images/project-2.png" alt="" />
+                  <div class="overlay">
+                    <p>Project name</p>
+                    <button type="button" class="btn modalBtn" id="Btn2">
+                      View project
+                    </button>
+                  </div>
+                </div>
+                <div class="project website fadeIn"></div>
+                <div class="project app fadeIn"></div>
+                <div class="project website fadeIn"></div>
+                <div class="project app fadeIn"></div>
+                <!-- Modals -->
+                <!-- The Modal -->
+                <div class="modal">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <span class="closeModal">×</span>
+                      <h3>Project 1</h3>
+                    </div>
+                    <div class="modal-body">
+                      <img src="res/images/project-1.png" alt="" />
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sequi dolorem itaque vel ut quaerat et modi excepturi
+                        veniam eum unde. Non eligendi eveniet consequuntur
+                        sapiente fugiat accusamus fuga commodi rerum?
+                      </p>
+                      <div class="technologies">
+                        <p>Tech stack :</p>
+                        <i class="fab fa-html5 fa-3x"></i>
+                        <i class="fab fa-css3-alt fa-3x"></i>
+                        <i class="fab fa-js fa-3x"></i>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="#" target="_blank">View Project</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- The Modal -->
+                <div class="modal">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <span class="closeModal">×</span>
+                    </div>
+                    <div class="modal-body">
+                      <p>Project 2</p>
+                      <p>Some other text...</p>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="#" target="_blank">View Project</a>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Calculator</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
-              </p>
-              <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Notificator</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
-              </p>
-              <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    
+    <!-- ***** Contact ***** -->
 
-    <!-- ***** About ***** -->
-
-    <section class="about" id="about">
+    <section class="contact" id="contact">
       <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos id
-              nostrum illo harum blanditiis, tenetur eum suscipit cupiditate
-              in vel, ex quam quidem quos mollitia labore aut sunt eius
-              ratione molestiae fuga veniam facere similique voluptate.
-            </p>
-            <!-- Provide a link to your resume -->
-            <a href="#" class="btn">My Resume</a>
-          </div>
+        <h2>Contact Me</h2>
+        <div class="contact-main">
+          <div class="contact-form">
+            <form action="action_page.php" method="POST">
+              <label for="fname">Full Name</label>
+              <input
+                type="text"
+                id="fname"
+                name="fullname"
+                placeholder="Your name.."
+              />
 
-          <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="" />
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your email"
+              />
+              <label for="subject">Subject</label>
+              <input
+              type="text"
+                id="subject"
+                name="subject"
+                placeholder="Write something.."
+                
+              ></input>
+
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Write something.."
+                style="height: 200px"
+              ></textarea>
+
+              <a type="submit" value="Submit" class="btn" >Submit</a>
+            </form>
+          </div>
+          <div class="social-media">
+            <h3>Follow me on Social Media</h3>
+            <ul class="social-links">
+              <li class="social-link-item">
+                <a
+                  href="https://www.facebook.com/hammam.bn.younes/"
+                  target="_blank"
+                >
+                  <i class="fab fa-facebook fa-2x"></i>
+                </a>
+              </li>
+
+              <li class="social-link-item">
+                <a
+                  href="https://www.linkedin.com/in/hammam-ben-younes-547869177/"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+              </li>
+              <li class="social-link-item">
+                <a href="https://github.com/hammambys" target="_blank">
+                  <i class="fab fa-github fa-2x"></i>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
-  </main>
 
-  <!-- ***** Contact ***** -->
+    <!-- ***** Footer ***** -->
 
-  <section class="contact" id="contact">
-    <div class="row">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-        <p>
-          Are you looking for a fast-performing and user-friendly website to
-          represent your product or business? or looking for any kind of
-          consultation? or want to ask questions? or have some advice for me
-          or just want to say "Hi 👋" in any case feel free to Let me know. I
-          will do my best to respond back. 😊 The quickest way to reach out to
-          me is via an email.
-        </p>
-        <!-- Replace the email with yours -->
-        <a href="mailto:you@example.com" class="btn">you@example.com</a>
+    <footer role="contentinfo" class="footer">
+      <div class="row">
+        <!-- Update the links to point to your accounts -->
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- ***** Footer ***** -->
+    <a href="#top" class="back-to-top" title="Back to Top">
+      <img
+        src="res/images/arrow-up.svg"
+        alt="Back to Top"
+        class="back-to-top__image"
+      />
+    </a>
 
-  <footer role="contentinfo" class="footer">
-    <div class="row">
-      <!-- Update the links to point to your accounts -->
-      <ul class="footer__social-links">
-        <li class="footer__social-link-item">
-          <a href="https://twitter.com/nisarhassan12/" title="Link to Twitter Profile">
-            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://github.com/nisarhassan12/" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://codepen.io/nisar_hassan" title="Link to Codepen Profile">
-            <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href=https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-        </li>
-      </ul>
-
-      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
-      <p>
-        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
-      </p>
-      <div class="footer__github-buttons">
-        <iframe
-          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
-          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
-        </iframe>
-      </div>
-    </div>
-  </footer>
-
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
-  </a>
-
-  <script src="./index.js"></script>
-  <script src="script.js"></script>
-</body>
-
+    <script src="./index.js"></script>
+    <script src="script.js"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  </body>
 </html>
