@@ -8,6 +8,12 @@ function handleActive(id) {
   document.getElementById(id).classList.add("active_input");
 }
 
+function ValidateForm() {
+  var msg = "Please fill these fields";
+  var fields = "";
+  if (document.getElementById("").value == "") champs += "Full Name \n";
+}
+
 // Get the modal
 var modal = document.getElementsByClassName("modal");
 
