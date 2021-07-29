@@ -8,10 +8,32 @@ function handleActive(id) {
   document.getElementById(id).classList.add("active_input");
 }
 
+function isEmail(email) {
+  let regex =
+    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+  return regex.test(String(email).toLowerCase());
+}
 function ValidateForm() {
-  var msg = "Please fill these fields";
-  var fields = "";
-  if (document.getElementById("").value == "") champs += "Full Name \n";
+  var fname = document.getElementById("fname").value;
+
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+  var errorMsg = "Please fill these fields : \n";
+  var errors = "";
+
+  if (fname == "") errors += "Full Name \n";
+
+  if (message == "") errors += "Message \n";
+  if (email == "") {
+    errors += "Email \n";
+  } else {
+    if (!isEmail(email)) alert("invalide email adress");
+  }
+  if (errors != "") {
+    alert(errorMsg + errors);
+  } else {
+    if (isEmail(email)) alert("email send successfully");
+  }
 }
 
 // Get the modal
