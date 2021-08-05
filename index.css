@@ -455,6 +455,13 @@ i:hover,
 /* --------------------------------------- */
 /* ----- Experience ----- */
 /* --------------------------------------- */
+.services {
+  display: flex;
+  justify-content: space-evenly;
+}
+.services div {
+  width: 300px;
+}
 
 /* --------------------------------------- */
 /* ----- Work ----- */
@@ -572,8 +579,15 @@ i:hover,
 
   color: var(--primary);
 }
+.modal-body .technologies {
+  display: flex;
+}
+.technologies p {
+  margin-right: 30px;
+}
 .modal-footer {
   text-align: center;
+  margin-top: 30px;
 }
 .modal-footer a {
   border: 2px solid;
@@ -597,6 +611,18 @@ i:hover,
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .inside_content {
+    display: block;
+  }
+  .inside_content .project {
+    margin-bottom: 10px;
+  }
+  .overlay {
+    opacity: 0.7;
+  }
 }
 
 /* --------------------------------------- */
@@ -642,6 +668,18 @@ i:hover,
   margin-right: var(--gutter-small);
 }
 
+@media (max-width: 500px) {
+  .contact-main {
+    display: block;
+  }
+  .contact-form {
+    width: 100%;
+  }
+  .social-media {
+    margin-top: 50px;
+    width: 100%;
+  }
+}
 /* --------------------------------------- */
 /* ----- Footer ----- */
 /* --------------------------------------- */
