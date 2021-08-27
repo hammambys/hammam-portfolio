@@ -70,7 +70,8 @@
               <div class="about__text">
                 <p>
                   I am an established Web Developer and currently studying
-                  Computer Science.
+                  Computer Science. Always motivated to learn new skills and my
+                  main goal is to build software that satisfy my clients needs
                 </p>
                 <!-- Put a small paragraph about yourself -->
                 <a href="#contact" class="btn btn--pink">Get in touch</a>
@@ -126,7 +127,7 @@
       <section class="work" id="work">
         <div class="row">
           <h2>My Work</h2>
-          <div class="work-content">
+          <div class="work__main">
             <nav class="menu">
               <input
                 type="button"
@@ -157,7 +158,7 @@
               />
               <input
                 type="button"
-                value="Applications"
+                value="Apps"
                 id="appBtn"
                 class="menuBtn"
                 onclick="document.querySelectorAll('.project').forEach(function(el) {
@@ -206,9 +207,6 @@
                     </button>
                   </div>
                 </div>
-                <div class="project app fadeIn"></div>
-                <div class="project website fadeIn"></div>
-                <div class="project app fadeIn"></div>
                 <div class="modal">
                   <!-- Modal content -->
                   <div class="modal-content">
@@ -306,63 +304,29 @@
     <section class="contact" id="contact">
       <div class="row">
         <h2>Contact Me</h2>
-        <div class="contact-main">
-          <div class="contact-form">
-            <form method="POST" action="send-mail.php">
-              <label for="fname">Full Name</label>
-              <input
-                type="text"
-                id="fname"
-                name="fullname"
-                placeholder="Your name.."
-              />
+        <div class="contact__main">
+          <form method="POST" action="send-mail.php" class="contact-form">
+            <input
+              type="text"
+              id="fname"
+              name="fullname"
+              placeholder="Your name"
+            />
 
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Your email"
-              />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email"
+            />
 
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Write something.."
-                style="height: 200px"
-              ></textarea>
-
-              <a type="button" class="btn" onclick="ValidateForm()">Submit</a>
-            </form>
-          </div>
-          <div class="social-media">
-            <h3>Follow me on Social Media</h3>
-            <ul class="social-links">
-              <li class="social-link-item">
-                <a
-                  href="https://www.facebook.com/hammam.bn.younes/"
-                  target="_blank"
-                >
-                  <i class="fab fa-facebook fa-2x"></i>
-                </a>
-              </li>
-
-              <li class="social-link-item">
-                <a
-                  href="https://www.linkedin.com/in/hammam-ben-younes-547869177/"
-                  target="_blank"
-                >
-                  <i class="fab fa-linkedin fa-2x"></i>
-                </a>
-              </li>
-              <li class="social-link-item">
-                <a href="https://github.com/hammambys" target="_blank">
-                  <i class="fab fa-github fa-2x"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your message"
+            ></textarea>
+          </form>
+          <a type="button" class="btn" onclick="ValidateForm()">Submit</a>
         </div>
       </div>
     </section>
@@ -371,7 +335,29 @@
 
     <footer role="contentinfo" class="footer">
       <div class="row">
-        <!-- Update the links to point to your accounts -->
+        <ul class="social-links">
+          <li class="social-link-item">
+            <a
+              href="https://www.linkedin.com/in/hammam-ben-younes-547869177/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+          </li>
+          <li class="social-link-item">
+            <a href="https://github.com/hammambys" target="_blank">
+              <i class="fab fa-github fa-2x"></i>
+            </a>
+          </li>
+          <li class="social-link-item">
+            <a
+              href="https://www.facebook.com/hammam.bn.younes/"
+              target="_blank"
+            >
+              <i class="fab fa-facebook fa-2x"></i>
+            </a>
+          </li>
+        </ul>
       </div>
     </footer>
 

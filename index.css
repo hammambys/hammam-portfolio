@@ -141,11 +141,15 @@ h3 {
 h2 {
   font-size: var(--font-size-large);
   margin-bottom: var(--gutter-medium);
+  position: relative;
+  text-align: center;
 }
 
 h2::after {
   content: "";
   display: block;
+  position: absolute;
+  left: 45%;
   height: 2px;
   width: 10rem;
   background: var(--secondary);
@@ -401,7 +405,7 @@ i:hover,
 
 .header {
   background-color: var(--primary);
-
+  height: 600px;
   font-size: var(--font-size-small);
   text-align: center;
 }
@@ -424,7 +428,7 @@ i:hover,
   display: flex;
   margin: auto;
   width: 80%;
-  margin-top: 60px;
+  margin-top: 100px;
 }
 .about__text .heading-primary {
   font-size: var(--font-size-medium-1);
@@ -449,12 +453,20 @@ i:hover,
 @media (max-width: 700px) {
   .about__main {
     display: block;
+    text-align: center;
+  }
+  .about__img {
+    margin: 0px 0px 0px 0px;
   }
 }
 
 /* --------------------------------------- */
 /* ----- Experience ----- */
 /* --------------------------------------- */
+.experience__main {
+  text-align: center;
+  margin-top: 100px;
+}
 .services {
   display: flex;
   justify-content: space-evenly;
@@ -466,6 +478,9 @@ i:hover,
 /* --------------------------------------- */
 /* ----- Work ----- */
 /* --------------------------------------- */
+.work__main {
+  margin-top: 100px;
+}
 
 .menu {
   display: flex;
@@ -629,28 +644,42 @@ i:hover,
 /* ----- Contact ----- */
 /* --------------------------------------- */
 
-.contact-main {
-  display: flex;
-}
-
-.contact-form {
+.contact__main {
   border-radius: 5px;
   padding: 20px;
-  width: 50%;
+  margin: 100px;
+}
+.contact-form {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 50px;
+}
+.contact-form textarea {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: 60px;
+}
+::placeholder {
+  color: #d79771;
 }
 
 .contact-form input,
 .contact-form textarea {
-  width: 100%; /* Full width */
   padding: 12px; /* Some padding */
   border: none;
-  background-color: var(--fourth);
-  font-style: inherit;
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  border-bottom: #ffebc9 solid;
+  color: #d79771;
+  font-size: var(--font-size-normal);
+  background-color: var(--primary);
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
   resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+.contact__main a {
+  left: 45%;
+  padding: 10px 30px !important;
+  margin-top: 50px;
+  position: absolute;
 }
 
 .social-media {
@@ -669,11 +698,11 @@ i:hover,
 }
 
 @media (max-width: 500px) {
-  .contact-main {
-    display: block;
+  .contact__main {
+    margin-top: 50px;
   }
   .contact-form {
-    width: 100%;
+    display: block;
   }
   .social-media {
     margin-top: 50px;
