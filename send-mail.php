@@ -37,7 +37,7 @@ if (empty($errors)) {
 
     mail($to, $email_subject, $email_body, $headers);
 
-    //redirect to the 'thank you' page
+    //redirect to the 'home' page
 
     header('Location: index.html');
 }
